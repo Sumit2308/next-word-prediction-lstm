@@ -51,7 +51,7 @@ Word choice matches the novel's vocabulary and style; short stretches are gramma
 
 ## Usage
 
-Open `next_word_prediction.py` in Google Colab (GPU runtime recommended) and run each cell in order. The script downloads the dataset, trains the model, plots accuracy/loss, and saves the trained model + tokenizer.
+Open `NLP_Project.ipynb` in Google Colab (GPU runtime recommended) and run each cell in order. The script downloads the dataset, trains the model, plots accuracy/loss, and saves the trained model + tokenizer.
 
 To generate predictions after training:
 

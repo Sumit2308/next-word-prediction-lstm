@@ -4,7 +4,7 @@ Deep learning NLP project that predicts the next word in a sentence, trained on 
 
 ## Overview
 
-Given a sequence of words, the model predicts the most probable next word — the same idea behind predictive keyboards and typing assistants. An LSTM network is trained on n-gram sequences built from the novel's text.
+Given a sequence of words, the model predicts the most probable next word - the same idea behind predictive keyboards and typing assistants. An LSTM network is trained on n-gram sequences built from the novel's text.
 
 ## Results
 
@@ -32,11 +32,11 @@ Word choice matches the novel's vocabulary and style; short stretches are gramma
 
 ## Pipeline
 
-1. **Data collection** — downloaded *Pride and Prejudice* directly from Project Gutenberg
-2. **Preprocessing** — sentence splitting, cleaning, lowercasing, tokenization, n-gram sequence generation, padding
-3. **Model** — `Embedding(100) → LSTM(256) → Dropout(0.3) → Dense(softmax)`
-4. **Training** — Adam optimizer, sparse categorical cross-entropy, early stopping + LR scheduling
-5. **Evaluation** — accuracy, top-5 accuracy, perplexity, qualitative text generation
+1. **Data collection** - downloaded *Pride and Prejudice* directly from Project Gutenberg
+2. **Preprocessing** - sentence splitting, cleaning, lowercasing, tokenization, n-gram sequence generation, padding
+3. **Model** - `Embedding(100) → LSTM(256) → Dropout(0.3) → Dense(softmax)`
+4. **Training** - Adam optimizer, sparse categorical cross-entropy, early stopping + LR scheduling
+5. **Evaluation** - accuracy, top-5 accuracy, perplexity, qualitative text generation
 
 ## Repo Structure
 
@@ -62,12 +62,12 @@ generate_text("mr darcy was", n_words=15)
 
 ## Limitations & Future Work
 
-- Trained on a single novel — a larger/more modern corpus would improve fluency and generalization
+- Trained on a single novel - a larger/more modern corpus would improve fluency and generalization
 - Vocabulary and style are specific to 19th-century English
 - Could be extended with bidirectional LSTM/GRU layers, pre-trained embeddings (GloVe/Word2Vec), or a Transformer-based approach
 
 ## Author
 
-**Sumit Mangalwedhekar** — [GitHub](https://github.com/sumit2308) · [Portfolio](https://sumit2308.github.io/portfolio)
+**Sumit Mangalwedhekar** - [GitHub](https://github.com/sumit2308) · [Portfolio](https://sumit2308.github.io/portfolio)
 
 *Built as part of the Innomatics Research Labs NLP capstone project.*
